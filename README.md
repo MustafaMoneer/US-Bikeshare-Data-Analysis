@@ -56,6 +56,8 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#bikeshare-data">Bike Share Data</a></li>
+        <li><a href="#statistics-computed">Statistics Computed</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -63,13 +65,11 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
@@ -174,7 +174,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@yMustafaMoneer_](https://twitter.com/MustafaMoneer_) - mustafa@ezzay.net
+Mustafa Moneer - [@yMustafaMoneer_](https://twitter.com/MustafaMoneer_) - mustafa@ezzay.net
 
 Project Link: [https://github.com/MustafaMoneer/US-Bikeshare-Data-Analysis](https://github.com/MustafaMoneer/US-Bikeshare-Data-Analysis)
 
