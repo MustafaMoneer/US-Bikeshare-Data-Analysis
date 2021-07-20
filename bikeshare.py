@@ -161,23 +161,37 @@ def user_stats(df):
     print()
 
     # Display counts of gender
-    gender = df['Gender'].value_counts()
-    print('The counts of gender is: \n', gender)
-    print()
+    if 'Gender' in df.columns:
+        gender = df['Gender'].value_counts()
+        print('The counts of gender is: \n', gender)
+    else:
+        print('The counts of gender is: \nSorry, there\'s no information available at this instance!\n')
+    
 
     # Display earliest, most recent, and most common year of birth
-    print('The earliest, most recent, and most common year of birth are:\n')
-    earliest = int(df['Birth Year'].min())
-    recent = int(df['Birth Year'].max())
-    common = int(df['Birth Year'].mode())
-    print('The earliest year of birth is: ', earliest, '\n')
-    print('The most recent year of birth is: ', recent, '\n')
-    print('The most common year of birth is: ', common, '\n')
-
+    if 'Birth Year' in df.columns:
+        print('\nThe earliest, most recent, and most common year of birth are:\n')
+        earliest = int(df['Birth Year'].min())
+        recent = int(df['Birth Year'].max())
+        common = int(df['Birth Year'].mode())
+        print('The earliest year of birth is: ', earliest, '\n')
+        print('The most recent year of birth is: ', recent, '\n')
+        print('The most common year of birth is: ', common, '\n')
+    else:
+        print('earliest, most recent, and most common year of birth are: \nSorry, there\'s no information available at this instance!')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+    start_loc = 1
+    while True:
+        view_data = input(
+            'Would you like to view 5 rows of individual trip data? Enter yes or no?\n')
+        if view_data.lower() == 'yes':
+            print(df[start_loc:start_loc+5])
+            start_loc = start_loc+5
+        else:
+            break
 
 def main():
     while True:
